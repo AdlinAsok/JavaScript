@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>what is today's date?</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="getdate()">Check today's date</button>
+    <p id="date"></p>
+    <script type="text/javascript">
+      function getdate(){
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1;
+      var yy = today.getFullYear();
+      document.getElementById("date").style.color="red";
+      document.getElementById("date").style.fontSize="100px";
+      document.getElementById("date").innerHTML=(mm+'/'+dd+'/'+yy);
+    }
+    </script>
+  </body>
+</html>
